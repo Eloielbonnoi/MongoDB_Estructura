@@ -1,2 +1,3 @@
-*.bak
 *.mwb
+*.mwb.bak
+*.DS_Store
