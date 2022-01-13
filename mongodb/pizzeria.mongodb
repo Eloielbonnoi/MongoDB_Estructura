@@ -30,7 +30,7 @@ db.comanda.insertMany([{
 
 db.botiga.drop();
 
-db.botiga.insertMany({
+db.botiga.insertMany([{
     'id_botiga': 1, 
     'adressa': 'Carrer Belgrado, 15', 
     'CP': 08024, 
