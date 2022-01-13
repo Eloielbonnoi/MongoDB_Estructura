@@ -3,5 +3,33 @@ use('youtube');
 db.user.drop();
 
 db.user.insertMany([
-    {'_id': 1, 'name': 'Eloi', 'e_mail'. 'eloi@eloi.com', 'password': '12340987RRt', 'birth_date': '1988-01-14', 'sex':'Non-Binary', 'CP': 08765, 'pais': 'FR', 'canal': {'id_canal': 1, }}
+    {
+        '_id': 1, 
+        'name': 'Eloi', 
+        'e_mail': 'eloi@eloi.com', 
+        'password': '12340987RRt', 
+        'birth_date': '1988-01-14', 
+        'sex':'Non-Binary', 
+        'CP': 08765, 
+        'pais': 'FR', 
+        'canal': {
+                    'id_canal': 1, 
+                    'nom_canal': 'Mis gatitos', 
+                    'descripcio': 'molts gats', 
+                    'data_creacio': '2016-05-18T17:30:00Z', 
+                    'subscriptors': [
+                                        {'id_user': 23}, 
+                                        {'id_user': 3}, 
+                                        {'id_user': 13}
+                                    ]}
+        ,'playlist': [{
+            'id_playlist': 1, 
+            'nom': 'hard_techno', 
+            'data_creacio': '2016-05-18T17:30:00Z', 
+            'estat': 'publica', 
+            'videos': [
+                    {'id_video': 1}, 
+                    {'id_video': 45},
+                    {'id_video': 125},
+                    {'id_video': 17}]}]}
 ]);
