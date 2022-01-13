@@ -1,0 +1,7 @@
+use('youtube');
+
+db.user.drop();
+
+db.user.insertMany([
+    {'_id': 1, 'name': 'Eloi', 'e_mail'. 'eloi@eloi.com', 'password': '12340987RRt', 'birth_date': '1988-01-14', 'sex':'Non-Binary', 'CP': 08765, 'pais': 'FR', 'canal': {'id_canal': 1, }}
+]);

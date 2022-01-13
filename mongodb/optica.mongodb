@@ -21,10 +21,10 @@ db.client.insertMany([
 db.comanda_ulleres.drop();
 
 db.comanda_ulleres.insertMany([
-    {'_id': 1, 'id_proveidor': 2, 'ulleres': {'_id': 1, 'marca': 'No thi fixis', 'montura': {'_id': 1, 'color': 'verd'}, 'vidres': {'_id': 1, 'graduacio_D': '1.5', 'graduacio_E': '0.5', 'color': 'transparent'}}},
-    {'_id': 2, 'id_proveidor': 2, 'ulleres': {'_id': 2, 'marca': 'Rolex', 'montura': {'_id': 1, 'color': 'negre'}, 'vidres': {'_id': 2, 'graduacio_D': '1.5', 'graduacio_E': '0.5', 'color': 'transparent'}}},
-    {'_id': 3, 'id_proveidor': 1, 'ulleres': {'_id': 3, 'marca': 'Rayban', 'montura': {'_id': 2, 'color': 'negre'}, 'vidres': {'_id': 2, 'graduacio_D': '0.5', 'graduacio_E': '0.5', 'color': 'blau'}}},
-    {'_id': 4, 'id_proveidor': 3, 'ulleres': {'_id': 1, 'marca': 'Rayban', 'montura': {'_id': 2, 'color': 'blanc'}, 'vidres': {'_id': 1, 'graduacio_D': '2.5', 'graduacio_E': '1.5', 'color': 'transparent'}}}
+    {'_id': 1, 'id_proveidor': 2, 'ulleres': {'_id': 1, 'marca': 'No thi fixis', 'montura': {'tipus_montura': 'pasta', 'color': 'verd'}, 'vidres': {'graduacio_D': '1.5', 'graduacio_E': '0.5', 'color': 'transparent'}}},
+    {'_id': 2, 'id_proveidor': 2, 'ulleres': {'_id': 2, 'marca': 'Rolex', 'montura': {'tipus_montura': 'flotant', 'color': 'negre'}, 'vidres': {'graduacio_D': '1.5', 'graduacio_E': '0.5', 'color': 'transparent'}}},
+    {'_id': 3, 'id_proveidor': 1, 'ulleres': {'_id': 3, 'marca': 'Rayban', 'montura': {'tipus_montura': 'flotant', 'color': 'negre'}, 'vidres': {'graduacio_D': '0.5', 'graduacio_E': '0.5', 'color': 'blau'}}},
+    {'_id': 4, 'id_proveidor': 3, 'ulleres': {'_id': 1, 'marca': 'Rayban', 'montura': {'tipus_montura': 'pasta', 'color': 'blanc'}, 'vidres': {'graduacio_D': '2.5', 'graduacio_E': '1.5', 'color': 'transparent'}}}
 ]);
 
 db.venda_ulleres.drop();
