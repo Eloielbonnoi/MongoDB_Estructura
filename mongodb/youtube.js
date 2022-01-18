@@ -1,6 +1,6 @@
 use('youtube');
 
-db.user.drop();
+db.use.drop();
 
 db.user.insertMany([
     {
@@ -40,7 +40,6 @@ db.user.insertMany([
 ]);
 
 
-db.video.drop();
 
 db.video.insertMany([{
     '_id': 1,

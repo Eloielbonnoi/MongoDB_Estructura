@@ -1,6 +1,6 @@
 use('youtube');
 
-db.user.drop();
+db.('youtube').drop();
 
 db.user.insertMany([
     {
@@ -38,8 +38,6 @@ db.user.insertMany([
     {'_id': 2, 'name': 'Marcelo', 'e_mail': 'marcelo@eloi.com', 'password': '12340987RRt', 'birth_date': '1988-01-14', 'sex':'Male', 'CP': 08765, 'pais': 'Es', 'canal': {'id_canal': 2, 'nom_canal': 'Mis bricolages', 'descripcio': 'clau anglesa', 'data_creacio': '2016-05-18T17:30:00Z', 'subscriptors': [{'id_user': 23}, {'id_user': 3}]}}
 ]);
 
-
-db.video.drop();
 
 db.video.insertMany([{
     '_id': 1,

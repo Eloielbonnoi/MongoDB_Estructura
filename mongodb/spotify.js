@@ -1,6 +1,6 @@
-use('spotify');
+db.spotify.drop();
 
-db.user.drop();
+use('spotify');
 
 db.user.insertMany([
     {
@@ -49,8 +49,6 @@ db.user.insertMany([
         ]
     }
 ]);
-
-db.artist.drop();
 
 db.artist.insertMany([{
     '_id': 14,
